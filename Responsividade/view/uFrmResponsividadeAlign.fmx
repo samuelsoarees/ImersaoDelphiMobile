@@ -1,0 +1,87 @@
+object FrmResponsividadeAlign: TFrmResponsividadeAlign
+  Left = 0
+  Top = 0
+  Caption = 'Responsividade - Alinhamentos'
+  ClientHeight = 690
+  ClientWidth = 388
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lytTeste: TLayout
+    Align = Client
+    Size.Width = 388.000000000000000000
+    Size.Height = 592.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object rec1: TRectangle
+      Fill.Color = claBlack
+      Position.X = 140.000000000000000000
+      Position.Y = 250.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+    end
+  end
+  object lytBottom: TLayout
+    Align = Bottom
+    Position.Y = 592.000000000000000000
+    Size.Width = 388.000000000000000000
+    Size.Height = 98.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lyt1: TLayout
+      Align = Left
+      Size.Width = 193.000000000000000000
+      Size.Height = 98.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object btnReset: TButton
+        Align = Center
+        Size.Width = 135.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Resetar Configura'#231#245'es'
+        OnClick = btnResetClick
+      end
+    end
+    object lyt2: TLayout
+      Align = Client
+      Size.Width = 195.000000000000000000
+      Size.Height = 98.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object cboAlinhamentos: TComboBox
+        Align = Center
+        Items.Strings = (
+          'Bottom'
+          'Center'
+          'Client'
+          'Contents'
+          'Left'
+          'Rigth'
+          'Scale'
+          'Top')
+        Size.Width = 100.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnChange = cboAlinhamentosChange
+      end
+      object lblRectangle: TLabel
+        Align = Left
+        Size.Width = 72.000000000000000000
+        Size.Height = 98.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Alinhamento'
+        TabOrder = 1
+      end
+    end
+  end
+end

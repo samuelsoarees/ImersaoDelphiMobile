@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{980E6FB2-A77D-4BD7-B1E9-C82F1CEF6AE3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Animacoes\ImersaoDelphiAnimacao.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Responsividade\ImersaoDelphiResponsividade.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ImersaoDelphiAnimacao">
+        <MSBuild Projects="Animacoes\ImersaoDelphiAnimacao.dproj"/>
+    </Target>
+    <Target Name="ImersaoDelphiAnimacao:Clean">
+        <MSBuild Projects="Animacoes\ImersaoDelphiAnimacao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImersaoDelphiAnimacao:Make">
+        <MSBuild Projects="Animacoes\ImersaoDelphiAnimacao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImersaoDelphiResponsividade">
+        <MSBuild Projects="Responsividade\ImersaoDelphiResponsividade.dproj"/>
+    </Target>
+    <Target Name="ImersaoDelphiResponsividade:Clean">
+        <MSBuild Projects="Responsividade\ImersaoDelphiResponsividade.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImersaoDelphiResponsividade:Make">
+        <MSBuild Projects="Responsividade\ImersaoDelphiResponsividade.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ImersaoDelphiAnimacao;ImersaoDelphiResponsividade"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ImersaoDelphiAnimacao:Clean;ImersaoDelphiResponsividade:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ImersaoDelphiAnimacao:Make;ImersaoDelphiResponsividade:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

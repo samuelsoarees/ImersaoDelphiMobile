@@ -1,0 +1,147 @@
+object FrmResponsividadeMargins: TFrmResponsividadeMargins
+  Left = 0
+  Top = 0
+  Caption = 'Responsividade - Margins'
+  ClientHeight = 690
+  ClientWidth = 388
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object recTitulo: TRectangle
+    Align = Top
+    Fill.Color = xFF0892E2
+    Size.Width = 388.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblImersaoDelphi: TLabel
+      Align = Client
+      StyledSettings = [Family]
+      Size.Width = 388.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Exemplos de usar Margins'
+      TabOrder = 0
+    end
+  end
+  object vrtscrlbx1: TVertScrollBox
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 368.000000000000000000
+    Size.Height = 620.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 368.000000000000000000
+    Viewport.Height = 620.000000000000000000
+    object recTitulo1: TRectangle
+      Align = Top
+      Fill.Color = xFFE8E8E8
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 358.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+      object lyt1: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 338.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lyt2: TLayout
+          Align = Left
+          TabOrder = 0
+          object img1: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+            MultiResBitmap = <
+              item
+                Width = 96
+                Height = 96
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                  380000000473424954080808087C0864880000043449444154789CEDDCCD6E1B
+                  551407F0FFB90EF14C5BF52320503F91684B2B101B9E805DC612DBBC000B2A79
+                  D878D99D1F823B4B5E20DBC04C772CBBEA0A1241080BA78452412915C1E3CA73
+                  0F0B3042512C279E3BF75ED7E7B7CBE69CE3FBF79DB13D330184104208218410
+                  42082184104288C691EF01E6B59A158FFEFFF7CB6EF2A1AF59EA589800DA59B1
+                  AD986F18526778CADC04B062736888F647DDE43DD733CE23F800229D0F98D4B5
+                  698B3E0D014C6C1E9769E74653B3D9106C00BD5E2FCE6EAFFFC92055A70E81AB
+                  FB4F1F9EEBF7FBA5ADD96C0A328048E70343EABACD9A0ABC5776935B366BDA10
+                  5C00B1CE0F2A52979BA8DD6273304C3B579BA83DAF5ADBDBB648E783A6161F00
+                  2A5257225DEC36557F1EC104D0EFF723DB879DE318A25BBD5E2F6EBACF490573
+                  086A674555F7847B528A795CA6C96B2E7ACD12C40E88743E70B5F80060885642
+                  391405110093BAE6BE276EBAEE791CEF01B4B362FBB45FB26C6010B5B362DB75
+                  DFA3BC07A098BD7D5355CC8D9FF467CEE07B0043EA8CC7DE677DF59EF01E808F
+                  C34F08BD27BC0670F427E5659CC1FB0E5876128067128067DE4F42ABD903F6D9
+                  FF6577DDEB1A78DF0104780B80C05EC307020840B139F4D79BBDF5FE6F06DF03
+                  18A2C132F69EF07E0E008076F6C0B8FE5244008FBAEBDEDF80DE07000062F3D8
+                  794FC3FBAE7B1E27881D0000EDAC1833A8E5A21781AB51375971D16B96207600
+                  00DC7FFAF09CAB5E9FEE7CE9FD47B8896076000044BAD835448DDE3AA2D8FC58
+                  A69D202EC60081050000B1CE7FAA485D69A2B6DC967202C3B4735581AD5FAF55
+                  CC3F84B6F84080010040D94DDEBDB7B31529E671DD5A8AB9BAB7B315956972DB
+                  C66CB60577083A2AD2C52E136E32E8F437E71ADE2F3F4BDE6E6A361B820F60A2
+                  9D15DFFE737B3A9D9D16068159311F1AA2C1A89BBCEF7AC6792C4C0047BD2A0F
+                  6808218410422CA785FB183AEB46AA45FB381A5C00AB59F148315F20D01A0331
+                  1356E6BD4E40E08A186302860C7E6688FE082D20EF01B4B3E21B65F832139D37
+                  444E2E9228E63131BF308A0E46DDE403173DA7F112409415DF11F3F58A5410CF
+                  6AB5D80C0D68304A93BBAE7BBB0C80625D3CAB882E3AEC796A2DE6E7C3345983
+                  A3FB951A0F606363A3B5F5D1272F2A8FCF01CCA3C5E6AF8FBFFEE2FCE6E666D5
+                  649F46038875F17BE8EFF859FEDD11979AAADF48006D5DEC80E84E080F40D8A2
+                  98BF2FD3E48EEDBAD61728D65F3DA9A8F596EDBA2168B179324C3B569FE4B71A
+                  40A4F3E786D4059B354363FB9064ED9A70FC79FEDBABBEF80050115D8C75FEAB
+                  AD7A56028874BE5729B566A3D622A848BD1EE97CCF462D2B011852EFD8A8B348
+                  6CBDE6DA01C43AFFC5C6208B28D6F9CF756BD40EC010BD51B7C6A232446FD6AD
+                  513B0097FFE52434365E7BAD02BE1F720E41DD3558DA776F282400CF2400CF24
+                  00CF2400CF2400CF2400CF2400CF6A5F0F58F62F63A1DD672484104208218410
+                  4208218410421CE36FC7D658960A9D21BB0000000049454E44AE426082}
+                FileName = 
+                  'C:\ProjetosHOTAL10_2\Projetos\Plugin\PDV\LancadorDocResort\Fonte' +
+                  's\Mobile\MobileLancadorDocResort\img\ic_account_grey600_48dp.png'
+              end>
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 30.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object lblImersaoDelphi1: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Size.Width = 288.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF545454
+          Text = 'Nome do usu'#225'rio do sistema'
+          TabOrder = 1
+        end
+      end
+    end
+  end
+end

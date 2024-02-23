@@ -1,7 +1,7 @@
-object frmPrincipal: TfrmPrincipal
+object FrmResponsividadePrincipal: TFrmResponsividadePrincipal
   Left = 0
   Top = 0
-  Caption = 'Anima'#231#245'es'
+  Caption = 'Responsividade'
   ClientHeight = 690
   ClientWidth = 388
   Fill.Kind = Solid
@@ -27,35 +27,8 @@ object frmPrincipal: TfrmPrincipal
       TextSettings.Font.StyleExt = {00070000000000000004000000}
       TextSettings.FontColor = claWhite
       TextSettings.HorzAlign = Center
-      Text = 'Imers'#227'o Delphi - Anima'#231#245'es'
+      Text = 'Imers'#227'o Delphi - Responsividade'
       TabOrder = 0
-    end
-  end
-  object recLoading: TRectangle
-    Align = Top
-    Fill.Color = xFF6AA1C1
-    Margins.Left = 20.000000000000000000
-    Margins.Top = 20.000000000000000000
-    Margins.Right = 20.000000000000000000
-    Position.X = 20.000000000000000000
-    Position.Y = 140.000000000000000000
-    Size.Width = 348.000000000000000000
-    Size.Height = 50.000000000000000000
-    Size.PlatformDefault = False
-    Stroke.Kind = None
-    XRadius = 12.000000000000000000
-    YRadius = 12.000000000000000000
-    object btnLoading: TSpeedButton
-      Align = Client
-      StyledSettings = [Family]
-      Size.Width = 348.000000000000000000
-      Size.Height = 50.000000000000000000
-      Size.PlatformDefault = False
-      Text = 'Filtros'
-      TextSettings.Font.Size = 18.000000000000000000
-      TextSettings.Font.StyleExt = {00070000000000000004000000}
-      TextSettings.FontColor = claWhite
-      OnClick = btnLoadingClick
     end
   end
   object recFloatAnimation: TRectangle
@@ -72,44 +45,44 @@ object frmPrincipal: TfrmPrincipal
     Stroke.Kind = None
     XRadius = 12.000000000000000000
     YRadius = 12.000000000000000000
-    object btnFloatAnimation: TSpeedButton
+    object btnAlign: TSpeedButton
       Align = Client
       StyledSettings = [Family]
       Size.Width = 348.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
-      Text = 'Entendendo o TFloatAnimation'
+      Text = 'Align'
       TextSettings.Font.Size = 18.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
       TextSettings.FontColor = claWhite
-      OnClick = btnFloatAnimationClick
+      OnClick = btnAlignClick
     end
   end
-  object recFiltros: TRectangle
+  object recMargins: TRectangle
     Align = Top
     Fill.Color = xFF6AA1C1
     Margins.Left = 20.000000000000000000
     Margins.Top = 20.000000000000000000
     Margins.Right = 20.000000000000000000
     Position.X = 20.000000000000000000
-    Position.Y = 210.000000000000000000
+    Position.Y = 140.000000000000000000
     Size.Width = 348.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     XRadius = 12.000000000000000000
     YRadius = 12.000000000000000000
-    object btnFiltros: TSpeedButton
+    object btnMargins: TSpeedButton
       Align = Client
       StyledSettings = [Family]
       Size.Width = 348.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
-      Text = 'Loading'
+      Text = 'Margins'
       TextSettings.Font.Size = 18.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
       TextSettings.FontColor = claWhite
-      OnClick = btnFiltrosClick
+      OnClick = btnMarginsClick
     end
   end
 end
