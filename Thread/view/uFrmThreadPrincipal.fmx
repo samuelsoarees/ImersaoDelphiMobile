@@ -1,0 +1,153 @@
+object FrmThreadPrincipal: TFrmThreadPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Imers'#227'o Delphi - Threads'
+  ClientHeight = 692
+  ClientWidth = 388
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object recTitulo: TRectangle
+    Align = Top
+    Fill.Color = xFF0892E2
+    Size.Width = 388.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblImersaoDelphi: TLabel
+      Align = Client
+      StyledSettings = [Family]
+      Size.Width = 388.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Imers'#227'o Delphi - Threads'
+      TabOrder = 0
+    end
+  end
+  object recSemThread: TRectangle
+    Align = Top
+    Fill.Color = xFF6AA1C1
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 70.000000000000000000
+    Size.Width = 348.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 12.000000000000000000
+    YRadius = 12.000000000000000000
+    object btnSemThread: TSpeedButton
+      Align = Client
+      StyledSettings = [Family]
+      Size.Width = 348.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Sem Threads'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = btnSemThreadClick
+    end
+  end
+  object recComThread: TRectangle
+    Align = Top
+    Fill.Color = xFF6AA1C1
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 167.000000000000000000
+    Size.Width = 348.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 12.000000000000000000
+    YRadius = 12.000000000000000000
+    object btnComThread: TSpeedButton
+      Align = Client
+      StyledSettings = [Family]
+      Size.Width = 348.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Com Thread'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = btnComThreadClick
+    end
+  end
+  object lblTeste: TLabel
+    Align = Top
+    Margins.Top = 10.000000000000000000
+    Position.Y = 130.000000000000000000
+    Size.Width = 388.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Teste'
+    TabOrder = 0
+  end
+  object recComThreadComSync: TRectangle
+    Align = Top
+    Fill.Color = xFF6AA1C1
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 237.000000000000000000
+    Size.Width = 348.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 12.000000000000000000
+    YRadius = 12.000000000000000000
+    object btnComThreadComSync: TSpeedButton
+      Align = Client
+      StyledSettings = [Family]
+      Size.Width = 348.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Thread com Sync'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = btnComThreadComSyncClick
+    end
+  end
+  object recThreadException: TRectangle
+    Align = Top
+    Fill.Color = xFF6AA1C1
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 307.000000000000000000
+    Size.Width = 348.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 12.000000000000000000
+    YRadius = 12.000000000000000000
+    object btnThreadException: TSpeedButton
+      Align = Client
+      StyledSettings = [Family]
+      Size.Width = 348.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Thread com Erro'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = btnThreadExceptionClick
+    end
+  end
+end

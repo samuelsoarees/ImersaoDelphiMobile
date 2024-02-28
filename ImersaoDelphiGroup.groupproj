@@ -9,6 +9,9 @@
         <Projects Include="Responsividade\ImersaoDelphiResponsividade.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="Thread\ImersaoDelphiThread.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="ImersaoDelphiResponsividade:Make">
         <MSBuild Projects="Responsividade\ImersaoDelphiResponsividade.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ImersaoDelphiThread">
+        <MSBuild Projects="Thread\ImersaoDelphiThread.dproj"/>
+    </Target>
+    <Target Name="ImersaoDelphiThread:Clean">
+        <MSBuild Projects="Thread\ImersaoDelphiThread.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImersaoDelphiThread:Make">
+        <MSBuild Projects="Thread\ImersaoDelphiThread.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="ImersaoDelphiAnimacao;ImersaoDelphiResponsividade"/>
+        <CallTarget Targets="ImersaoDelphiAnimacao;ImersaoDelphiResponsividade;ImersaoDelphiThread"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="ImersaoDelphiAnimacao:Clean;ImersaoDelphiResponsividade:Clean"/>
+        <CallTarget Targets="ImersaoDelphiAnimacao:Clean;ImersaoDelphiResponsividade:Clean;ImersaoDelphiThread:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="ImersaoDelphiAnimacao:Make;ImersaoDelphiResponsividade:Make"/>
+        <CallTarget Targets="ImersaoDelphiAnimacao:Make;ImersaoDelphiResponsividade:Make;ImersaoDelphiThread:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
