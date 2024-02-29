@@ -2,7 +2,7 @@ object FrmLoading: TFrmLoading
   Left = 0
   Top = 0
   Caption = 'Anima'#231#245'es - Loading'
-  ClientHeight = 690
+  ClientHeight = 692
   ClientWidth = 388
   Fill.Kind = Solid
   Position = MainFormCenter
@@ -10,10 +10,29 @@ object FrmLoading: TFrmLoading
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object lyt1: TLayout
+    Align = Client
+    Size.Width = 388.000000000000000000
+    Size.Height = 692.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnExibir: TSpeedButton
+      Align = Center
+      StyledSettings = [Family]
+      Size.Width = 150.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Exibir'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF777676
+      OnClick = btnExibirClick
+    end
+  end
   object lytLoading: TLayout
     Align = Contents
     Size.Width = 388.000000000000000000
-    Size.Height = 690.000000000000000000
+    Size.Height = 692.000000000000000000
     Size.PlatformDefault = False
     Visible = False
     TabOrder = 0
@@ -22,7 +41,7 @@ object FrmLoading: TFrmLoading
       Fill.Color = claBlack
       Opacity = 0.400000005960464500
       Size.Width = 388.000000000000000000
-      Size.Height = 690.000000000000000000
+      Size.Height = 692.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
     end
@@ -4197,25 +4216,6 @@ object FrmLoading: TFrmLoading
         StartValue = 0.000000000000000000
         StopValue = 360.000000000000000000
       end
-    end
-  end
-  object lyt1: TLayout
-    Align = Client
-    Size.Width = 388.000000000000000000
-    Size.Height = 690.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 1
-    object btnExibir: TSpeedButton
-      Align = Center
-      StyledSettings = [Family]
-      Size.Width = 150.000000000000000000
-      Size.Height = 100.000000000000000000
-      Size.PlatformDefault = False
-      Text = 'Exibir'
-      TextSettings.Font.Size = 20.000000000000000000
-      TextSettings.Font.StyleExt = {00070000000000000004000000}
-      TextSettings.FontColor = xFF777676
-      OnClick = btnExibirClick
     end
   end
 end
